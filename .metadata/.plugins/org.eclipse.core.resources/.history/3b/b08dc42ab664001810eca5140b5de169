@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:root@192.168.223.139:8080/eureka/
+server:
+  port: 8085
+spring:
+  application:
+    name: service-mysql-service
+  
+  
+
+spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
+spring.datasource.url = jdbc:mysql://localhost:3306/assetmgr
+spring.datasource.username = root
+spring.datasource.password = 123456
+spring.datasource.driverClassName = com.mysql.jdbc.Driver
+
+mybatis.mapper-locations: classpath:*Mapper.xml
+mybatis.mapper-locations.type-aliases-package: vue.bean

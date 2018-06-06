@@ -1,0 +1,5 @@
+package com.yhem.yunmirror.oracle.service.service.feignService;
+
+public interface MysqlService {
+
+}

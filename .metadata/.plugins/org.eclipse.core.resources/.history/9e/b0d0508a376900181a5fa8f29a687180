@@ -1,0 +1,29 @@
+package com.yhem.yunmirror.mysql.service.config;
+
+import java.util.Collection;
+import java.util.Properties;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PropertiesLoaderUtils;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.stereotype.Component;
+
+@Component  
+public class SecurityWhitelistHandler {
+
+	@Autowired  
+    private Resource securityWhitelistResource;  
+  
+    public HttpSecurity handle(HttpSecurity http) throws Exception {  
+        Properties props = PropertiesLoaderUtils.loadProperties(securityWhitelistResource);  
+        Collection<Object> values = props.values();  
+        String[] liString = new String[values.size()];  
+        values.toArray(liString);  
+        return http  
+                .authorizeRequests()  
+                .regexMatchers(liString)  
+                .permitAll()  
+                .and();  
+    }  
+}

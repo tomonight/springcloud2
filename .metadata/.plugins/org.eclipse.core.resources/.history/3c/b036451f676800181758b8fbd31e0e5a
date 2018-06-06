@@ -1,0 +1,6 @@
+server:
+  port: 9411
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:root@192.168.223.140:8080/eureka/

@@ -1,0 +1,40 @@
+eureka:
+  instance:
+    prefer-ip-address: true 
+  client:
+    serviceUrl:
+      defaultZone: http://root:root@192.168.223.140:8080/eureka/
+server:
+  port: 8085
+feign:
+  hystrix:
+    enabled: true
+spring:
+  application:
+    name: service-mysql-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.99.49:3306/assetmgr
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
+  zipkin:
+    base-url: http://192.168.99.49:9050
+mybatis:
+  mapper-locations: classpath:*Mapper.xml
+  type-aliases-package: com.yhem.yunmirror.mysql.service.bean
+  
+endpoints:
+  health:
+    sensitive: false
+    enabled: true
+management:
+  security:
+    enabled: false
+security:
+  oauth2:
+    resource:
+      id: mysql
+      user-info-uri: http://192.168.99.49:9030/uaa/user
+      prefer-token-info: false
+  

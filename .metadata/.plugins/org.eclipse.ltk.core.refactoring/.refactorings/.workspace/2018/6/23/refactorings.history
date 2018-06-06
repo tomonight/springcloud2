@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;yunmirro-oracle-service&apos; to &apos;yunmirror-oracle-service&apos;" description="Rename resource &apos;yunmirro-oracle-service&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/yunmirro-oracle-service" name="yunmirror-oracle-service" stamp="1528095875010" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;yunmirror&apos; to &apos;yunmirror-oauth2&apos;" description="Rename resource &apos;yunmirror&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/yunmirror" name="yunmirror-oauth2" stamp="1528170023492" updateReferences="true"/>
+</session>

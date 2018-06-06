@@ -1,0 +1,8 @@
+package com.yhem.yunmirror.zuul.authorization;
+
+
+@EnableAuthorizationServer
+public class AuthorizationServer {
+
+	
+}

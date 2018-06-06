@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;yunmirro-config-server&apos; to &apos;yunmirror-config-server&apos;" description="Rename resource &apos;yunmirro-config-server&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/yunmirro-config-server" name="yunmirror-config-server" stamp="1527834038672" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;eureka-server&apos; to &apos;yunmirror-eureka-server&apos;" description="Rename resource &apos;eureka-server&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/eureka-server" name="yunmirror-eureka-server" stamp="1527834057287" updateReferences="true"/>
+</session>

@@ -1,0 +1,7 @@
+package com.yhem.yunmirror.mysql.service;
+
+public class Snippet {
+	public static void main(String[] args) {
+		com.yhem.yunmirror.mysql.service
+	}
+}

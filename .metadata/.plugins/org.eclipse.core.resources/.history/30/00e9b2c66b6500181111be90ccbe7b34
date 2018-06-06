@@ -1,0 +1,21 @@
+server:
+  port:8888
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl: 
+      defaultZone: http://root:root@192.168.223.140:8080/eureka/
+spring:
+  application: 
+    name: com.yhem.yunmirror/eureka-server
+  cloud:
+    config:
+      label: master
+      profile: dev
+    server:
+      git:
+        uri: https://github.com/cm4heli/springcloud
+        searchPaths: config
+        username: cm4heli
+        password: ht123456

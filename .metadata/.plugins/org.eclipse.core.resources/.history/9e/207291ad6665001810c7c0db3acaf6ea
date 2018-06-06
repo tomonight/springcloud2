@@ -1,0 +1,27 @@
+server:
+  port:8888
+security:
+  user:
+    password: root
+    name: root
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl: 
+      defaultZone: http://localhost:8080/eureka/
+spring:
+  application: 
+    name: com.yhem.yunmirror/eureka-server
+  cloud:
+    config:
+      label: master
+      profile: dev
+
+
+spring.cloud.config.server.git.uri=https://github.com/cm4heli/springcloud
+spring.cloud.config.server.git.searchPaths=config
+spring.cloud.config.label=master	
+spring.cloud.config.server.git.username=cm4heli
+spring.cloud.config.server.git.password=ht123456 
+eureka.client.serviceUrl.defaultZone=http://localhost:8080/eureka/

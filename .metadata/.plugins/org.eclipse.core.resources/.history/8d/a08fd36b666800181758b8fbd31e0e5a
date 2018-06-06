@@ -1,0 +1,21 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:root@192.168.223.140:8080/eureka/
+server:
+  port: 8086
+    
+spring:
+  application:
+    name: service-oracle-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/assetmgr
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:*Mapper.xml
+  type-aliases-package: com.yhem.yunmirror.mysql.service.bean
+  

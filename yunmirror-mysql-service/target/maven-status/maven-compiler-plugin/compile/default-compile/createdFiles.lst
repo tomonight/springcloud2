@@ -1,0 +1,8 @@
+com\yhem\yunmirror\mysql\service\config\ResourceServerConfig.class
+com\yhem\yunmirror\mysql\service\mapper\UserMapper.class
+com\yhem\yunmirror\mysql\service\service\fallback\FeignFallbackService.class
+com\yhem\yunmirror\mysql\service\controller\TestController.class
+com\yhem\yunmirror\mysql\service\service\TestService.class
+com\yhem\yunmirror\mysql\service\service\feign\FeignService.class
+com\yhem\yunmirror\mysql\service\bean\User.class
+com\yhem\yunmirror\mysql\service\MysqlServiceApplication.class

@@ -1,0 +1,8 @@
+package com.yhem.yunmirror.zuul.authorization;
+
+import java.util.HashMap;
+
+
+public class AuthorizationServer {
+
+}

@@ -1,0 +1,12 @@
+spring.application.name=config-server
+server.port=8888
+
+
+spring.cloud.config.server.git.uri=http://ming.chen@gitlab.enmotech.com/ming.chen/config.git
+spring.cloud.config.server.git.searchPaths=/**
+spring.cloud.config.label=master
+spring.cloud.config.server.git.username=mming.chen@enmotech.com
+spring.cloud.config.username=ming.chen@enmotech.com
+spring.cloud.config.password=ht123456
+spring.cloud.config.server.git.password=ht123456 
+eureka.client.serviceUrl.defaultZone=http://root:root@192.168.223.140:8080/eureka/

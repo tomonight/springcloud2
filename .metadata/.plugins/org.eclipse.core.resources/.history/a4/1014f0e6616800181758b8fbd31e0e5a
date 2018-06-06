@@ -1,0 +1,10 @@
+package com.yhem.yunmirror.oracle.service.service.feignService;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+
+
+@FeignClient(value = "")
+public interface MysqlService {
+
+	
+}

@@ -1,0 +1,17 @@
+server:
+  port:8080
+security:
+  user:
+    password: root
+    name: root
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl: 
+      defaultZone: http://localhost:8080/eureka/
+spring:
+  application: 
+    name: com.yhem.yunmirror/eureka-server
+    
+    

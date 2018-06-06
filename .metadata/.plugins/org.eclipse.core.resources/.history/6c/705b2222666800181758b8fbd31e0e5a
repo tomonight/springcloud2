@@ -1,0 +1,5 @@
+package com.yhem.yunmirror.zipkin;
+
+public class ServerZipkinApplication {
+
+}

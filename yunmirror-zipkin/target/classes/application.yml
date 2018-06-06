@@ -1,0 +1,5 @@
+server:
+  port: 9050
+eureka:
+  instance:
+    prefer-ip-address: true 

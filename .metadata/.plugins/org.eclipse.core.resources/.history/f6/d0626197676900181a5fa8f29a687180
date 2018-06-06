@@ -1,0 +1,24 @@
+
+public class HelloMySQL {
+
+	public void initialize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean status() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	public void insert() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public int count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.yhem.yunmirror.zuul.filter;
+
+import com.netflix.zuul.ZuulFilter;
+
+public class AccessFilter extends ZuulFilter {
+
+}

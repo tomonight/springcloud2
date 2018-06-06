@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;yunmirror-config-client/src/main/resources/bootstrap.properties&apos; to &apos;bootstrap.yml&apos;" description="Rename resource &apos;bootstrap.properties&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/bootstrap.properties" name="bootstrap.yml" stamp="1527834494012" updateReferences="true"/>
+</session>

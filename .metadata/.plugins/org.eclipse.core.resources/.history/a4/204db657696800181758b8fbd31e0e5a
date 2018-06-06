@@ -1,0 +1,6 @@
+package com.yhem.yunmirror.mysql.service.service.fallback;
+
+@Component
+public class FeignFallbackService implements FeignService{
+
+}

@@ -1,0 +1,18 @@
+package com.yhem.yunmirror;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
+
+public class ServiceRegisterCenter extends SpringBootServletInitializer {
+
+	@Override
+	protected SpringApplicationBuilder configure(
+			SpringApplicationBuilder application) {
+		return application.sources(ServiceRegisterCenter.class);
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(ServiceRegisterCenter.class, args);
+	}
+}

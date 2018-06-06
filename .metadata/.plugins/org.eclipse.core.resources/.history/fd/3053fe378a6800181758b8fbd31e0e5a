@@ -1,0 +1,8 @@
+package com.yhem.yunmirror.zuul.config.swagger;
+
+public class Snippet {
+	public static void main(String[] args) {
+		Swagger2Config
+	}
+}
+

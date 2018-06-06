@@ -1,0 +1,21 @@
+server:
+  port:8080
+security:
+  user:
+    password: root
+    name: root
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl: 
+      defaultZone: http://peer2:8081/eureka/
+  server:
+    enable-self-preservation: false
+  instance:
+    hostname: peer1
+spring:
+  profiles: peer1
+  application: 
+    name: com.yhem.yunmirror/eureka-server
+    

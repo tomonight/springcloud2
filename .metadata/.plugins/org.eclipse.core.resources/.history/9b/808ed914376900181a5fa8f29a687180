@@ -1,0 +1,19 @@
+package com.yhem.yunmirror.mysql.service.config;
+@Component  
+public class SecurityWhitelistHandler {
+
+	@Autowired  
+    private Resource securityWhitelistResource;  
+  
+    public HttpSecurity handle(HttpSecurity http) throws Exception {  
+        Properties props = PropertiesLoaderUtils.loadProperties(securityWhitelistResource);  
+        Collection<Object> values = props.values();  
+        String[] liString = new String[values.size()];  
+        values.toArray(liString);  
+        return http  
+                .authorizeRequests()  
+                .regexMatchers(liString)  
+                .permitAll()  
+                .and();  
+    }  
+}

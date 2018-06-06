@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      discovery:
+        enabled: true
+        serviceId: config-server
+    profile: dev
+    stream:  
+      #\u6307\u5b9a\u7528kafka stream\u6765\u4f5c\u4e3a\u9ed8\u8ba4\u6d88\u606f\u4e2d\u95f4\u4ef6  
+      default-binder: kafka  
+      kafka:  
+        #\u6765\u81eaKafkaBinderConfigurationProperties  
+        binder:  
+          brokers: os1:9094  
+          zkNodes: name85:2181,name86:2181,name87:2181/kafka0101  
+          #\u5982\u679c\u9700\u8981\u4f20\u9012\u81ea\u5b9a\u4e49header\u4fe1\u606f\uff0c\u9700\u8981\u5728\u6b64\u5904\u58f0\u660e\uff0c\u4e0d\u7136\u81ea\u5b9a\u4e49\u6d88\u606f\u5934\u662f\u4e0d\u4f1a\u51fa\u73b0\u5728\u6700\u7ec8\u6d88\u606f\u5f53\u4e2d\u7684  
+          configuration:  
+            auto:  
+              offset:  
+                #\u53ef\u4ee5\u8bbe\u7f6e\u539f\u751fkafka\u5c5e\u6027\uff0c\u6bd4\u5982\u8bbe\u7f6e\u65b0\u7684\u6d88\u8d39\u7ec4\u4ece\u6700\u65b0\u7684offset\u5f00\u59cb\u6d88\u8d39  
+                reset: latest
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:root@192.168.223.140:8080/eureka/
+server:
+  port: 8881
+management:
+  security:
+    enabled: false
+  

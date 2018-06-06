@@ -1,0 +1,14 @@
+
+public class HelloMySQL {
+
+	public void initialize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean status() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

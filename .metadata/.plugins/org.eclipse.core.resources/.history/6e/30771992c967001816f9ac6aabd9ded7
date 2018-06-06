@@ -1,0 +1,27 @@
+package com.yhem.yunmirror.zuul.filter;
+
+import com.netflix.zuul.ZuulFilter;
+
+public class AccessFilter extends ZuulFilter {
+
+	public Object run() {
+		return "pre";
+	}
+
+	public boolean shouldFilter() {
+		return false;
+	}
+
+	@Override
+	public int filterOrder() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String filterType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

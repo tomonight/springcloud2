@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      discovery:
+        enabled: true
+        serviceId: config-server
+      retry:  
+        max-attempts: 6  
+        initial-interval: 1000  
+        multiplier: 1.1  
+        max-interval: 2000  
+    profile: dev
+    stream:  
+      default-binder: kafka  
+      kafka:  
+        binder:  
+          brokers: os1:9094  
+          zkNodes: name85:2181,name86:2181,name87:2181/kafka0101  
+          configuration:  
+            auto:  
+              offset:  
+                reset: latest
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:root@192.168.223.140:8080/eureka/
+server:
+  port: 8881
+management:
+  security:
+    enabled: false
+  
